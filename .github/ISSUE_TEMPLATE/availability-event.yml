@@ -7,7 +7,7 @@ body:
   - type: dropdown
     id: status
     attributes:
-      label: Current status of the event
+      label: Status
       options:
         - Ongoing
         - In recovery
@@ -17,13 +17,14 @@ body:
   - type: input
     id: start_time
     attributes:
-      label: YYYY/MM/DD hh:mm UTC
+      label: Start Time
       placeholder: YYYY/MM/DD hh:mm UTC
       description: Start Date and Time (UTC)
     validations:
       required: true      
-  - type: markdown  
+  - type: textarea
     id: description
+    label: Description
     attributes:
       value: |
         ## Event Summary
@@ -31,23 +32,26 @@ body:
         A clear and concise summary of the event.
     validations:
       required: true
-  - type: markdown  
+  - type: textarea  
     id: timeline
+    label: Timeline
     attributes:
       value: |
         ## Event Timeline
         
         1. 10/20/2025 12:00 AM UTC ...
         2. ...
-  - type: markdown  
+  - type: textarea  
     id: alarms
+    label: Alarm Thresdholds Breached
     attributes:
       value: |
         ## Relevant Alarm Thresholds Breached
         
         Description of alarms and thresholds which were breached
 
-  - type: markdown
+  - type: textarea
+    id: footer
     attributes:
       value: |
         ----
