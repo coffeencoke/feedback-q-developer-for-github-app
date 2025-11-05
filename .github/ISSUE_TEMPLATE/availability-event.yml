@@ -24,8 +24,8 @@ body:
       required: true      
   - type: textarea
     id: description
-    label: Description
     attributes:
+      label: Description
       value: |
         ## Event Summary
         
@@ -34,8 +34,8 @@ body:
       required: true
   - type: textarea  
     id: timeline
-    label: Timeline
     attributes:
+      label: Timeline
       value: |
         ## Event Timeline
         
@@ -43,8 +43,8 @@ body:
         2. ...
   - type: textarea  
     id: alarms
-    label: Alarm Thresdholds Breached
     attributes:
+      label: Alarm Thresdholds Breached
       value: |
         ## Relevant Alarm Thresholds Breached
         
@@ -53,6 +53,7 @@ body:
   - type: textarea
     id: footer
     attributes:
+      label: '---'
       value: |
         ----
       
