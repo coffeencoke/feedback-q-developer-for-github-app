@@ -25,29 +25,23 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Description
-      value: |
-        ## Event Summary
-        
+      label: Event Summary
+      value: |        
         A clear and concise summary of the event.
     validations:
       required: true
   - type: textarea  
     id: timeline
     attributes:
-      label: Timeline
+      label: Event Timeline
       value: |
-        ## Event Timeline
-        
         1. 10/20/2025 12:00 AM UTC ...
         2. ...
   - type: textarea  
     id: alarms
     attributes:
-      label: Alarm Thresdholds Breached
+      label: Relevant Alarm Thresholds Breached
       value: |
-        ## Relevant Alarm Thresholds Breached
-        
         Description of alarms and thresholds which were breached
 
   - type: textarea
@@ -55,6 +49,4 @@ body:
     attributes:
       label: '---'
       value: |
-        ----
-      
         For latest status, see https://health.aws.amazon.com/health/status
